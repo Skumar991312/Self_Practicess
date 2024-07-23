@@ -1,0 +1,26 @@
+package in.kumarsk.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ControllerClass {
+	
+	
+	@GetMapping("/welcome")
+	public String getWelcomeMsg() {
+		
+		String msg="Welcome To My House";
+		
+		return msg;
+		
+	}
+	@GetMapping("/read")
+	public String getReadMsg() {
+		
+		String msg="Good Night";
+		
+		return msg;
+	}
+
+}
